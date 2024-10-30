@@ -1,0 +1,352 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 105vh;
+  overflow-y: hidden;
+  background-image: radial-gradient(circle, #383838 80%, #3d3d3d);
+}
+
+.header {
+  margin-inline: auto;
+  width: 1360px;
+  padding-top: 43px;
+}
+
+.nav {
+  height: 63px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search {
+  border: none;
+  width: 750px;
+  height: 62px;
+  border-radius: 40px;
+  box-shadow: 0 4px 40px 5px rgba(0, 0, 0, 0.25);
+  background-color: #444;
+  padding-left: 100px;
+  padding-right: 15px;
+  font-family: "Poppins";
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+}
+
+.search::placeholder {
+  position: relative;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.6);
+  font-family: "Poppins", sans-serif;
+}
+
+.search_area {
+  position: relative;
+}
+
+.search_area::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 46px;
+  left: 33px;
+  top: 10px;
+  background-image: url(assets/icons/search\ 1.svg);
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.dark_mode {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  padding-top: 1px;
+}
+
+.dark_mode-button {
+  border: 1px solid transparent;
+  cursor: pointer;
+  height: 38px;
+  width: 100px;
+  background-color: #fff;
+  border-radius: 40px;
+}
+
+.dark_mode::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: black;
+  left: 60px;
+  top: 5px;
+}
+
+.dark_mode-text {
+  font-size: 18px;
+  font-weight: 800;
+  font-family: "Puppins", sans-serif;
+  text-align: center;
+  color: white;
+  white-space: nowrap;
+}
+
+.location-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  column-gap: 20px;
+  border: none;
+  width: 300px;
+  height: 100%;
+  border-radius: 40px;
+  box-shadow: 0 4px 40px 0 rgba(0, 0, 0, 0.25);
+  background: #4cbb17;
+
+  font-family: "Puppins", sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.location-img {
+  width: 40px;
+  height: 40px;
+
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(assets/icons/current\ location\ icon.svg);
+}
+
+.location-btn:hover {
+  background: #44ac14;
+}
+
+.main {
+  margin-top: 38px;
+  display: flex;
+  margin-inline: auto;
+  width: 1360px;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: space-between;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: #fff;
+}
+
+.container-upper,
+.container-lower {
+  height: 330px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-time {
+  height: 100%;
+  width: 540px;
+  background-color: #444;
+  box-shadow: 10px 10px 4px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 30px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+
+.container-weather-data {
+  height: 100%;
+  width: 750px;
+  background-color: #444;
+  box-shadow: 10px 10px 4px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 30px;
+}
+
+.container-5days-forecast {
+  width: 460px;
+  background-color: #444;
+  box-shadow: 10px 10px 4px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 30px;
+}
+
+.container-hourly-forecast {
+  width: 817px;
+  background-color: #444;
+  box-shadow: 10px 10px 4px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 30px;
+}
+
+.date-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 5px;
+}
+
+.city-name {
+  font-size: 36px;
+  color: #fff;
+}
+
+.exact-time {
+  font-size: 96px;
+}
+
+.day {
+  margin-top: -22px;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.container-weather-data {
+  display: flex;
+  column-gap: 26px;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.weather-temperature {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+}
+
+.temperature-fact {
+  color: transparent;
+  background: linear-gradient(68deg, #fff 0%, rgba(255, 255, 255, 0) 100%);
+  background-clip: text;
+  font-weight: 700;
+  font-size: 80px;
+}
+
+.temperature-feels-like {
+  margin-top: -22px;
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.feels-like-grad {
+  color: rgba(255, 255, 255, 0.8);
+  margin-left: 20px;
+}
+
+.sunrise {
+  margin-top: 26px;
+}
+.container-sun-periods {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.sunrise,
+.sunset {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.sun-periods-text {
+  width: 80px;
+}
+
+.sun-periods-text {
+  text-align: start;
+}
+
+.weather-center {
+  margin-left: -20px;
+  width: 250px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.weather-actual {
+  font-weight: 600;
+  font-size: 32px;
+  text-align: center;
+  color: #fff;
+}
+
+.weather-details {
+  margin-left: -30px;
+  display: grid;
+  width: 250px;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.detail {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.detail img {
+  width: 50%;
+  height: 50%;
+}
+
+.container-5days-forecast {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 28px;
+}
+
+.forecast {
+  width: 100%;
+  margin-left: 10px;
+  display: grid;
+  justify-content: start;
+  align-items: center;
+  text-align: center;
+  grid-template-columns: 20% 40% 40%;
+  grid-template-rows: 50px;
+}
+
+.weekly-forecast {
+  margin-top: -20px;
+  width: 100%;
+}
+
+.grad{
+    font-size: 24px;
+    justify-self: center;
+}
+
+.forecast-date{
+    justify-self: start;
+    font-size: 20px;
+}
+
+.forecast img{
+    width: 60px;
+    height: 60px;
+    justify-self: end;
+}

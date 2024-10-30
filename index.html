@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="dark_mode">
+                <button class="dark_mode-button"></button>
+                <div class="dark_mode-text">Dark Mode</div>
+            </div>
+
+            <div class="search_area">
+                <input type="text" class="search" placeholder="Search for your preffered city...">
+            </div>
+
+
+
+            <button class="location-btn">
+                <img class="location-img" src="assets/icons/current location icon.svg" alt="location finder img">
+                <div class="location-text">Current Location</div>
+            </button>
+
+        </nav>
+    </header>
+
+    <main class="main">
+        <div class="container">
+
+            <div class="container-upper">
+                <div class="container-time">
+                    <div class="city-name">Athens</div>
+                    <div class="date-data">
+                        <div class="exact-time">09:03</div>
+                        <div class="day">Thursday, 31 Aug</div>
+                    </div>
+                </div>
+
+                <div class="container-weather-data">
+                    <div class="weather-left">
+                        <div class="weather-temperature">
+                            <div class="temperature-fact">24°C</div>
+                            <div class="temperature-feels-like">Feels like:<span class="feels-like-grad" style="font-size: 32px;">22°C</span></div>
+                        </div>
+                        <div class="container-sun-periods">
+                            <div class="sunrise">
+                                <img src="assets/icons/sunrise-white 1.png" alt="" style="height: 48px; width: 48px;">
+                                <div class="sun-periods-text">
+                                    <div class="period-text">Sunrise</div>
+                                    <div class="period-text-time">6:37 AM</div>
+                                </div>
+                            </div>
+                            <div class="sunset">
+                                <img src="assets/icons/sunset-white 1.png" alt="" style="height: 48px; width: 48px;"> 
+                                <div class="sun-periods-text">
+                                    <div class="period-text">Sunset</div>
+                                    <div class="period-text-time">20:37 PM</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="weather-center">
+                        <img src="assets/icons/sun.svg" alt="">
+                        <div class="weather-actual">Sunny</div>
+                    </div>
+
+                    <div class="weather-details">
+                        <div class="detail">
+                            <img src="assets/icons/humidity 1.svg" alt="">
+                            <div class="humidity-percentage">41%</div>
+                            <div class="humidity-text">Humidity</div>
+                        </div>
+                        <div class="detail">
+                            <img src="assets/icons/wind 1.svg" alt="">
+                            <div class="wind-speed">41%</div>
+                            <div class="wind-text">Wind Speed</div>
+                        </div>
+                        <div class="detail">
+                            <img src="assets/icons/pressure-white 1.svg" alt="">
+                            <div class="pressure-data">997hPa</div>
+                            <div class="pressure-text">Pressure</div>
+                        </div>
+                        <div class="detail">
+                            <img src="assets/icons/uv-white 1.svg" alt="">
+                            <div class="UV-ones">8</div>
+                            <div class="UV-text">UV</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-lower">
+                <div class="container-5days-forecast">
+                    <h3 style="font-size: 32px; margin: 0px;">5 Days Forecast:</h3>
+                    <div class="weekly-forecast">
+                        <div class="forecast-day1 forecast">
+                            <img src="assets/icons/forecast_icns/clouds 1.png" alt="">
+                            <div class="grad">20°C</div>
+                            <div class="forecast-date">Friday, 1 Sep</div>
+                        </div>
+                        <div class="forecast-day2 forecast">
+                            <img src="assets/icons/forecast_icns/drizzle 1.png" alt="">
+                            <div class="grad">20°C</div>
+                            <div class="forecast-date">Friday, 1 Sep</div>
+                        </div>
+                        <div class="forecast-day3 forecast">
+                            <img src="assets/icons/forecast_icns/clear 2.png" alt="">
+                            <div class="grad">20°C</div>
+                            <div class="forecast-date">Friday, 1 Sep</div>
+                        </div>
+                        <div class="forecast-day4 forecast">
+                            <img src="assets/icons/forecast_icns/mist 1.png" alt="">
+                            <div class="grad">20°C</div>
+                            <div class="forecast-date">Friday, 1 Sep</div>
+                        </div>
+                        <div class="forecast-day5 forecast">
+                            <img src="assets/icons/forecast_icns/rain 1.png" alt="">
+                            <div class="grad">20°C</div>
+                            <div class="forecast-date">Friday, 1 Sep</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-hourly-forecast"></div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
