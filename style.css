@@ -159,6 +159,8 @@ body {
 }
 
 .container-time {
+  position: relative;
+
   height: 100%;
   width: 540px;
   background-color: #444;
@@ -170,6 +172,31 @@ body {
   align-items: center;
   justify-content: center;
   gap: 25px;
+
+  overflow: hidden;
+  z-index: 1;
+  transition: 1s ease;
+}
+
+.container-time:active {
+  transform: scale(1.1);
+}
+
+.container-time::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  left: -220px;
+  bottom: -80px;
+  height: 160%;
+  transform: rotate(35deg);
+  width: 120px;
+  background-color: #4d4c4c;
+}
+
+.container-time:hover::before {
+  transition: 1s linear;
+  left: 700px;
 }
 
 .container-weather-data {
@@ -292,8 +319,8 @@ body {
 }
 
 .weather-details {
-  margin-left: -30px;
   display: grid;
+  margin-left: -30px;
   width: 250px;
   grid-template-columns: 1fr 1fr;
   align-items: center;
@@ -301,17 +328,24 @@ body {
 
 .detail {
   display: flex;
+  align-self: center;
   flex-direction: column;
   gap: 10px;
   align-items: center;
 }
 
 .detail img {
-  width: 50%;
-  height: 50%;
+  width: 62px;
+  height: 62px;
+  transition: 1s linear;
+}
+
+.detail:hover img {
+  transform: scale(1.1);
 }
 
 .container-5days-forecast {
+  height: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -335,18 +369,62 @@ body {
   width: 100%;
 }
 
-.grad{
-    font-size: 24px;
-    justify-self: center;
+.grad {
+  font-size: 24px;
+  justify-self: center;
 }
 
-.forecast-date{
-    justify-self: start;
-    font-size: 20px;
+.forecast-date {
+  justify-self: start;
+  font-size: 20px;
 }
 
-.forecast img{
-    width: 60px;
-    height: 60px;
-    justify-self: end;
+.forecast img {
+  width: 60px;
+  height: 60px;
+  justify-self: end;
+}
+.container-hourly-forecast {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.container-hourly-forecast h3 {
+  margin-top: 0px;
+}
+.hourly-forecast {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: -10px;
+}
+.hourly-forecast-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 250px;
+  border-radius: 40px;
+  background: #373636;
+  gap: 15px;
+  margin-top: -25px;
+}
+.forecast-weather-state {
+  width: 70px;
+  height: 70px;
+}
+
+.forecast-wind-direction {
+  width: 40px;
+  height: 40px;
+}
+
+.hourly-forecast-wind-speed {
+  margin-top: 10px;
 }
