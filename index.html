@@ -16,9 +16,10 @@
                 <div class="dark_mode-text">Dark Mode</div>
             </div>
 
-            <div class="search_area">
-                <input type="text" class="search" placeholder="Search for your preffered city...">
-            </div>
+            <form class="search_area">
+                <button class="submit-btn" type="submit"><img src="assets/icons/search 1.svg" alt=""></button>
+                <input type="text" class="search" id="searchId" placeholder="Search for your preffered city...">
+            </form>
 
 
 
@@ -38,7 +39,7 @@
                     <div class="city-name">Athens</div>
                     <div class="date-data">
                         <div class="exact-time">09:03</div>
-                        <div class="day">Thursday, 31 Aug</div>
+                        <div class="day">Friday, 20 Aug</div>
                     </div>
                 </div>
 
@@ -53,14 +54,14 @@
                                 <img src="assets/icons/sunrise-white 1.png" alt="" style="height: 48px; width: 48px;">
                                 <div class="sun-periods-text">
                                     <div class="period-text">Sunrise</div>
-                                    <div class="period-text-time">6:37 AM</div>
+                                    <div class="period-text-time sunrise-time">06:37 AM</div>
                                 </div>
                             </div>
                             <div class="sunset">
                                 <img src="assets/icons/sunset-white 1.png" alt="" style="height: 48px; width: 48px;"> 
                                 <div class="sun-periods-text">
                                     <div class="period-text">Sunset</div>
-                                    <div class="period-text-time">20:37 PM</div>
+                                    <div class="period-text-time sunset-time">20:37 PM</div>
                                 </div>
                             </div>
                         </div>
@@ -165,6 +166,8 @@
             </div>
         </div>
     </main>
+
+    <script src="app.js"></script>
 </body>
 
 </html>
