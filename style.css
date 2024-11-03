@@ -179,10 +179,6 @@ body {
   transition: 1s ease;
 }
 
-.container-time:active {
-  transform: scale(1.1);
-}
-
 .container-time::before {
   content: "";
   z-index: -1;
@@ -244,7 +240,7 @@ body {
   font-size: 20px;
 }
 
-.weather-left{
+.weather-left {
   display: grid;
   width: 250px;
   height: 100%;
@@ -254,18 +250,20 @@ body {
 .container-weather-data {
   display: flex;
   justify-content: space-between;
-
-    text-align: center;
+  align-self: bottom;
+  text-align: center;
 }
 
 .weather-temperature {
-  display: flex;
+  width: 100%;
+  display: grid;
   flex-direction: column;
-  align-self: center;
   justify-self: center;
+  grid-template-rows: 70% 40%;
 }
 
 .temperature-fact {
+  justify-self: center;
   color: transparent;
   background: linear-gradient(68deg, #fff 0%, rgba(255, 255, 255, 0) 100%);
   background-clip: text;
@@ -273,17 +271,27 @@ body {
   font-size: 80px;
 }
 
+.temp-data{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 55% 45%;
+  grid-template-rows: auto;
+}
+
 .temperature-feels-like {
-  margin-top: -22px;
   font-weight: 600;
   font-size: 20px;
-  text-align: center;
   color: rgba(255, 255, 255, 0.8);
+  align-self: start;
+  justify-self: ;
+  text-wrap: nowrap;
 }
 
 .feels-like-grad {
+  align-self: top;
+  justify-self: center;
+  margin-top: -5px;
   color: rgba(255, 255, 255, 0.8);
-  margin-left: 20px;
 }
 
 .sunrise {
